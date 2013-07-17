@@ -18,10 +18,12 @@
 	"repository": "https://github.com/shinken-monitoring/pack-vmware",
 	"keywords": [
 	  "pack",
-	  "vmware-cluster",
+	  "vmware",
 	  "esx",
-	  "vmware-vm",
-	  "vmware-vcenter"
+	  "esxi",
+	  "virtualization",
+	  "vm",
+	  "vcenter"
 	],
 	"dependencies": {
 	  "shinken": ">=1.4"
