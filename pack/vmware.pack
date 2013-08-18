@@ -5,7 +5,7 @@
 
 "path":"virtualization/",
 
-"templates": ["vmware-cluster", "esx", "vmware-vm", "vmware-vcenter"],
+"templates": ["vmware-cluster", "esx", "vmware-vm", "vmware-vcenter","windows-vcenter"],
 
 "macros":{
          "_CLUSTER_CPU_WARN": { "type":"percent",
@@ -52,6 +52,9 @@
                              },
          "_VM_MEM_CRIT": {"type":"percent",
                              "description":"Level for ram usage"
-                             }
+                             },
+	 "_vcservices": {"type":"list",
+			     "description":"VmWare Windows Services"
+			     }
          }
 }
