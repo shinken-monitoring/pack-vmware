@@ -13,7 +13,12 @@
 	  {
 		"name": "Imrane Dessai",
 		"email": "dessai.imrane@gmail.com"
-	  } 
+	  },
+          {
+                "name": "Romain Forlot",
+                "email": ""
+          }
+
 	],
 	"repository": "https://github.com/shinken-monitoring/pack-vmware",
 	"keywords": [
