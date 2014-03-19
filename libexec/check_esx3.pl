@@ -4086,7 +4086,7 @@ sub dc_runtime_info
 						chop($tools_status);
 						if ($tools_status eq "Running-Newest")
 						{
-							$output .= $name . "(Running-Newest), ";
+                                                        #$output .= $name . "(Running-Newest), ";
 							$tools_ok++;
 						}
 						else
