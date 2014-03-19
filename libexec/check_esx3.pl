@@ -3284,6 +3284,8 @@ sub vm_runtime_info
 			my %vm_state_strings = ("poweredOn" => "UP", "poweredOff" => "DOWN", "suspended" => "SUSPENDED");
 			my $state = $vm_state_strings{$runtime->powerState->val};
 			$output = "\"$vmname\" run state=" . $state;
+                        my $pfd = $state eq "UP" ? 1 : 0;
+                        $np->add_perfdata(label => "state", value => $pfd, uom => '');
 			$res = OK if ($state eq "UP");
 		}
 		elsif ($subcommand eq "STATUS")
